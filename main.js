@@ -4,8 +4,8 @@ require("update-electron-app")();
 
 const createWindow = () => {
   const win = new BrowserWindow({
-    width: 800,
-    height: 600,
+    width: 500,
+    height: 325,
     webPreferences: {
       preload: path.join(__dirname, "preload.js"),
     },
