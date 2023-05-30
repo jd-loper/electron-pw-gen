@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="node_modules/xel/xel.js" type="module"></script>
+    <script src="index.js"></script>
     <meta name="xel-theme" content="node_modules/xel/themes/adwaita-dark.css" />
     <meta name="xel-accent-color" content="blue" />
     <meta name="xel-size" content="medium" />
@@ -23,15 +24,17 @@
         </main>
       </x-card>
       <x-box style="justify-content: center; gap: 10px">
-        <x-button>
+        <x-button id="genBttn">
           <x-label>Generate</x-label>
         </x-button>
         <x-button>
           <x-icon href="#copy"></x-icon>
+          <x-tooltip href="#about" style="--align: right">Copy</x-tooltip>
         </x-button>
       </x-box>
-      <x-card> </x-card>
+      <x-card id="pw">
+        <main></main>
+      </x-card>
     </x-box>
-    <script src="renderer.js"></script>
   </body>
 </html>
